@@ -6,16 +6,30 @@
         </head>
         <body>
             <form action="/madlib">
-                enter persons name: <input type="text" name="person"><br>
+                enter persons name: <input type="text" name="person" required><br>
                 choose color:
-                <select name="color">
+                <select name="color" required>
                     <option value="electric blue">electric blue</option>
                     <option value="hott pink">hott pink</option>
                     <option value="green">green</option>
                     <option value="magenta">magenta</option>
+
                 </select>
-                <br>input noun: <input type="text" name="noun"><br>
-                input adjective: <input type="text" name="adjective">
+                <br>input noun: <input type="text" name="noun" required><br>
+                input adjective: <input type="text" name="adjective" required>
+                <br>
+                choose your favorite planet:
+                <input type="radio" name="planet" value="jupiter">jupiter
+                <input type="radio" name="planet" value="mars">mars 
+                <input type="radio" name="planet" value="saturn">saturn
+                <br>
+                Coolest animal?:
+                <input type="checkbox" name="animal" value="balloonicorn">balloonicorn
+                <input type="checkbox" name="animal" value="shorstack_overflow">shortstack overflow
+                <input type="checkbox" name="animal" value="memory_elephant">memory elephant
+                <input type="checkbox" name="animal" value="python">python
+                <input type="checkbox" name="animal" value="hyena">hyena
+                <input type="checkbox" name="animal" value="puppy">puppy
                 <br>
                 <input type="submit">
 

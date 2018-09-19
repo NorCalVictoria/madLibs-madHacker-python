@@ -6,10 +6,19 @@
     </head>
     <body>
         <p>
-            There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+            There once was a {{ color }} {{ noun }} from {{ planet }} sitting in the Hackbright Lab.
             When {{ player }} went to pick it up, it burst into flames in a totally
             {{ adjective }} way.
         </p>
+        {%if animal %}
+        The coolest animals are:
+        <ul>
+            {% for anim in animal %}
+            <li>{{ anim }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        
     </body>
 
 </html>
